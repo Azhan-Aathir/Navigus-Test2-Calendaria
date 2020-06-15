@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Navigus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=2f0e23d7762aa29e18d927e8b41863fb">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script src="http://code.jquery.com/jquery.js"></script>
+ <script src="bootstrap/js/bootstrap.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="firebase.js"></script>
+<script src="navbar.js"></script>
+<script src="parallax.js"></script>
+<script src="about.js"></script>
+<script src="hide.js"></script>
+<script src="slider.js"></script>
+<script src="mail.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header" class="img-fluid header" data-image-src="/assets/img/header/lightbulb.jpg?h=5ae19a62c2598a5b73ec39fce7476e52" data-parallax="scroll" style="background-image: url(&quot;/assets/img/header/lightbulb.jpg?h=5ae19a62c2598a5b73ec39fce7476e52&quot;);background-size:contain;">
+            <div class="navNames fixed-top">
+                <nav class="navbar navbar-light navbar-expand-md text-center d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center bounce animated" id="navbar" style="background-color: transparent;font-family: proxima_nova_altbold;opacity: 1;">
+                    <div class="container-fluid"><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler m-auto" style="background-color: #ffdb2b;"><span class="sr-only">Toggle navigationMen</span><span class="navbar-toggler-icon" style="width: 20px;height: 20px;"></span></button>
+                        <div
+                            class="collapse navbar-collapse" id="navcol-1">
+                            <div class="d-flex flex-column flex-grow-1 flex-fill align-content-center flex-wrap mx-auto" id="navdiv" style="background-color: rgb(255,255,255,0.4);">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#About">OverView</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" id="search" href="#searches">Search</a></li>
+                                    <li class="nav-item dropdown show" id="offering"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" style="color: rgb(0,0,0);">Offerings</a>
+                                        <div class="dropdown-menu show" role="menu"><a class="dropdown-item" role="presentation" href="#splan">Profile Update</a><a class="dropdown-item" role="presentation" href="#scplan">Update Booking</a><a class="dropdown-item" role="presentation" href="#Trainers2">Book Slot</a></div>
+                                    </li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" id="signin" href="#register">Sign Up</a></li>
+                                    <li class="nav-item text-center" role="presentation"><button class="btn btn-primary text-center" id="logout" type="button">Log Out</button></li>
+                                </ul>
+                            </div>
+                    </div>
+            </div>
+            </nav>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="d-flex justify-content-center align-items-center" id="testimonials" style="flex:40%;">
+                <div id="quotes" style="color: #000;">
+                    <div class="shadow slideshow w3-animate-top" id="q1" style="background-color: rgba(255,255,255,0.85);">
+                        <p>Easy UI,Good System overall<br><strong>-User</strong></p>
+                    </div>
+                    <div class="shadow slideshow w3-animate-top" id="q2" style="background-color: rgba(255,255,255,0.85);">
+                        <p>One Kind of a Best Calendar Slot Booking Site<br><strong>-User&nbsp;</strong><br></p>
+                    </div>
+                    <div class="shadow slideshow w3-animate-top" id="q3" style="background-color: rgba(255,255,255,0.85);">
+                        <p>Interaction Made Easy<br><strong>-User</strong></p>
+                    </div>
+                    <div class="shadow slideshow w3-animate-top" id="q4" style="background-color: rgba(255,255,255,0.85);">
+                        <p>Slickiest UI<br><strong>-User</strong><br></p>
+                    </div>
+                </div>
+            </div>
+            <div id="imagelogo"><img class="img-fluid" id="logo" src="/assets/img/calendaria.gif?h=7095b304be853b8429da8bde4d398392"></div>
+        </div>
+    </div>
+    <div id="bag" style="background-image: url(&quot;/assets/img/textures/ta1.jpg?h=756d9eed745e8260d9bb8c2269e81449&quot;);">
+        <div class="d-flex flex-column justify-content-center align-items-center" id="recommP">
+            <div id="About">
+                <div class="d-flex justify-content-center align-items-center" id="container1">
+                    <div class="d-sm-flex justify-content-sm-center align-items-sm-center" id="Aboutimg"><img id="abtimg" src="/assets/img/about/abt2.png?h=25d0953ffa45b2775d502c7209d3b246"></div>
+                    <div class="d-flex flex-column align-items-center align-content-center align-self-center flex-wrap justify-content-sm-center" id="About2">
+                        <p id="show" style="padding: 1px;"><strong>Search : </strong>A User can search for a particular person either by name or by occupation.<br><strong>Profile : </strong>A User needs to Sign In , in-order to have a Slot Schedule or to book a slot.<br><strong>Slot Booking : </strong>A
+                            simple process when done, the System will notify both the Slot Owner and Slot Booker about the Meeting via mail.&nbsp;</p>
+                        <p id="extra"><strong>Profile Update : </strong>A User can update his profile when Needed by opting for Profile Update.<br><strong>Slot Update : </strong>If there is more than 24 hours for the booked Meeting, the slot can be modified.<br><strong>Google Calendar : </strong>Google
+                            Calendar Integrated.<br></p><button class="btn btn-primary text-monospace mt-auto" id="btn1" type="button" onclick="visibility()">Read More</button></div>
+                </div>
+            </div>
+            <div id="About21">
+                <div class="d-flex justify-content-center align-items-center" id="container1">
+                    <div class="d-sm-flex justify-content-sm-center align-items-sm-center" id="Aboutimg"><img id="abtimg" src="/assets/img/profile.png?h=cd24dee16caf203943eca70aea5f937c"></div>
+                    <div class="d-flex flex-column align-items-center align-content-center align-self-center flex-wrap justify-content-sm-center" id="About2">
+                        <p id="show" style="padding: 1px;"><strong>&nbsp; &nbsp; Name : </strong><input type="text">&nbsp;&nbsp;<br><br><strong>Location : </strong><input type="text"><br></p>
+                        <p id="extra2"><strong>Monday Slots &nbsp; &nbsp; &nbsp; :&nbsp;</strong><br><strong>Tuesday Slots &nbsp; &nbsp; &nbsp; :&nbsp;</strong><br><strong>Wednesday Slots :&nbsp;</strong><br><strong>Thursday Slots &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp;</strong><br><strong>Friday Slots &nbsp; &nbsp; &nbsp; :&nbsp;</strong><br><br></p>
+                        <div
+                            class="text-center d-xl-flex justify-content-between align-items-xl-center"><button class="btn btn-primary text-monospace mt-auto" style="margin-right:10px"  id="btn2" type="button" onclick="visibility2()">Show Slots</button><button class="btn btn-primary text-monospace mt-auto" id="btn3" type="button" onclick="update()">Update Profile</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="searches">
+            <div class="d-flex justify-content-center align-items-center" id="Trainers">
+                <div class="d-sm-flex justify-content-sm-center align-items-sm-center" id="Aboutimg2"><img src="/assets/img/search.png?h=8175c533abf8a205f60f16e1b281bd58"></div>
+                <div class="text-center d-flex flex-column justify-content-center align-content-center align-self-center flex-wrap justify-content-sm-center align-items-sm-center profileIntro" id="profIntro">
+                    <p class="text-left intro" id="intro" style="padding: 0px;"><strong>Profession/Name </strong><input type="search"><br></p><button class="btn btn-primary" type="button" onclick="search()" id="btn4"><strong>Search</strong></button></div>
+            </div>
+        </div>
+        <div id="About31">
+            <div class="d-flex justify-content-center align-items-center" id="container1">
+                <div class="d-sm-flex justify-content-sm-center align-items-sm-center" id="Aboutimg"><img id="abtimg" src="/assets/img/searchRes.png?h=83268f9394eda66ff61e08dc32d261f1"></div>
+                <div class="d-flex flex-column align-items-center align-content-center align-self-center flex-wrap justify-content-sm-center" id="About2">
+                    <p type="button"><strong>&nbsp; &nbsp; The Search Result Obtained is</strong><br><br><br><br><br><br><br><br><br><strong>&nbsp;</strong>&nbsp;&nbsp;<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="register">
+        <div class="d-flex flex-column justify-content-center align-items-center" id="containerCU" style="padding-top: 20px;background-image: url(&quot;/assets/img/textures/t2.png?h=4b6f1dd6be5d3e99b964701136235413&quot;);">
+            <div class="d-flex justify-content-center align-items-center justify-content-sm-end align-items-sm-center" id="CUimage"><img src="/assets/img/register.png?h=ab7e69523a8e439b64d9241149ced8fc"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center bgbgc" id="Contact" style="padding-top: 20px;padding-bottom: 20px;background-color: transparent;font-family: proxima_nova_altbold;">
+                <form id="form" class="form" data-bss-subject="Messaged From IGM360DEGREES.com" style="width: 300px;color: rgb(0,0,0);">
+                    <div id="span3" class="input-group" style="margin-bottom: 20px;"><span class="text-center input-group-addon" style="background-color: rgba(225,219,43,0.6);"><i class="fas fa-user-secret" style="color: rgb(2,30,51);"></i></span><input class="form-control inp" type="password" id="pass" style="background-color: rgba(225,219,43,0.6);margin: 0px;color: rgb(0,0,0);"
+                            placeholder="Password"></div>
+                    <div id="span2" class="input-group" style="margin-bottom: 20px;"><span class="text-center input-group-addon" style="background-color: rgba(225,219,43,0.6);"><i class="icon ion-android-mail" style="color: rgb(2,30,51);"></i></span><input class="form-control inp" type="text" id="email" placeholder="Email"
+                            style="background-color: rgba(225,219,43,0.6);margin: 0px;color: rgb(0,0,0);" required="" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"></div>
+                    <div style="margin-top: 25px;background-image: url(&quot;/assets/img/textures/t2.png?h=4b6f1dd6be5d3e99b964701136235413&quot;);"><button class="btn btn-primary btn-lg" id="login" type="button" style="margin-right: 5px;font-family: proxima_nova_altbold;background-color: rgb(22,127,239);display:none">&nbsp;Log In</button><button class="btn btn-primary btn-lg"
+                            id="signup" type="button" style="margin-right: 5px;font-family: proxima_nova_altbold;background-color: rgb(22,127,239);display:none;">Sign Up</button></div>
+                </form>
+                <div><img id="imgTrlogo" src="/assets/img/calendaria.gif?h=7095b304be853b8429da8bde4d398392" width="200px" height="80px" style="opacity: 1;filter: grayscale(0%) saturate(200%);"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/smart-forms.min.js?h=1585abf9beaf49802b3a80bf813edceb"></script>
+    <script src="/assets/js/script.min.js?h=2bd73486fe916e8c7cc69353b939a392"></script>
+</body>
+
+</html>
